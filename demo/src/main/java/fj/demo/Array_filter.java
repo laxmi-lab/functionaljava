@@ -12,5 +12,9 @@ public final class Array_filter {
         final Array<Integer> b = a.filter(even);
         final Array<Integer> c = a.filter(i -> i % 2 == 0);
         arrayShow(intShow).println(b); // {44,22,90,98,1078,6,64,6,42}
+        
+        final Array<Integer> a = array(12,13,16);
+		final Array<Integer> b = a.map(i->i+50);
+		arrayShow(intShow).println(b);
     }
 }
